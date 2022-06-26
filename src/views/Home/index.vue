@@ -1,7 +1,6 @@
 <template>
 <div>
-    <!-- 一级占位符 -->
-    <router-view></router-view>
+    首页
 </div>
 </template>
 
@@ -19,6 +18,6 @@ export default {
 }
 </script>
 
-<style scoped lang='less'>
+<style scoped>
 
 </style>
