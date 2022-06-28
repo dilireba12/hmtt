@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="登录">
+    <van-nav-bar title="登录" @click-left="$router.back()">
       <!--一般写法 <template v-slot='left'>
         <van-icon name="cross" />
       </template> -->
@@ -76,6 +76,7 @@ export default {
         // res.data.data
         // token有效期2个小时 两种思路 让用户重新登录refresh_token
         this.$store.commit('setUser', res.data.data)
+        this.$router.push({ name: 'my' })
       } catch (err) {
         console.log(err)
       }
@@ -111,6 +112,8 @@ export default {
   font-size: 37px;
 }
 .yzm {
+  position: fixed;
+  right: 10px;
   width: 152px;
   height: 46px;
   line-height: 46px;
@@ -129,5 +132,9 @@ export default {
   border-radius: 10px;
   font-size: 30px;
   color: #fff;
+}
+.van-count_down {
+  position: fixed;
+  right: 18px;
 }
 </style>
