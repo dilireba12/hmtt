@@ -113,7 +113,7 @@ export default {
 .header {
   width: 750px;
   height: 401px;
-  background: rgba(50, 150, 250) url("@/assets/banner.png") no-repeat;
+  background: rgba(50, 150, 250,) url("@/assets/banner.png") no-repeat;
   background-size: cover;
 }
 .header-notlogin {
